@@ -38,7 +38,7 @@ ul {
     header, section, footer {
         margin: 0;
         padding: 0;
-        page-break-before: always; 
+        page-break-inside: avoid; /* Avoid page breaks inside sections */
     }
 
     header {
@@ -86,9 +86,14 @@ ul {
         max-width: 700px;
         margin: 0 auto;
     }
+
+    /* Ensure the whole page fits and avoids unnecessary breaks */
+    body {
+        padding: 20px;
+    }
 }
 
-
+/* Screen Styles */
 @media screen {
     body {
         margin: 20px;
@@ -99,10 +104,3 @@ ul {
         margin: 0 auto;
     }
 }
-@media print {
-    body, header, section, footer {
-        display: block;
-    }
-}
-
-
