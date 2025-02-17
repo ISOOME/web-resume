@@ -98,4 +98,10 @@ ul {
         max-width: 800px;
         margin: 0 auto;
     }
+@media print {
+    header, section, footer {
+        display: block;
+    }
+}
+
 }
