@@ -75,11 +75,6 @@ ul {
         margin-bottom: 5px;
     }
 
-    /* Hide unnecessary elements when printing */
-    a {
-        display: none;
-    }
-
     /* Removing margins for printing */
     * {
         box-sizing: border-box;
